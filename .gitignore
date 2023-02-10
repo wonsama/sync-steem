@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+## wonsama added
+yarn.lock
+ecosystem.config.js
