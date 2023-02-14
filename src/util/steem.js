@@ -38,8 +38,21 @@ function getAccountHistory(author, start = -1, limit = 10) {
   return post(method, params);
 }
 
+/**
+ * 블록 정보를 확인할 수 있다.
+ * @param {number} block_num
+ * @returns  블록 정보
+ */
+function getBlock(block_num) {
+  let method = "condenser_api.get_block";
+  let params = [block_num];
+
+  return post(method, params);
+}
+
 module.exports = {
   getDynamicGlobalProperties,
   getAccountHistory,
   getContent,
+  getBlock,
 };
